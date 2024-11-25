@@ -1,0 +1,85 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contentContainer
+{
+    width: 900px;
+    background-color: #b1ecf5;
+    border-bottom: 2px solid black;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contentContainer:hover
+{
+    background-color: #ff5555;
+}
+
+.contentContainer > div
+{
+    margin-bottom: 10px;
+}
+
+.buttonGroup
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button
+{
+    background: linear-gradient(to bottom, #48f314, #106308);
+    color: white;
+    padding: 10px;
+    border: 0;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover
+{
+    background: linear-gradient(to bottom, #48f314, #106308);
+}
+
+.overlayBox
+{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 540px;
+    height: fit-content;
+    background-color: #e1ff73;
+    text-align: center;
+    padding: 20px;
+}
+
+.overlayBox > div
+{
+    text-align: left;
+}
+
+.overlayWrapper
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
